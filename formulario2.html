@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <fieldset>
+     
+        <legend>Dados pessoais</legend>
+
+        digite seu nome aqui:<input
+type = "text" name="nome"placeholder="ex:João da Silva">
+<br>
+
+digite sua idade aqui:<input
+type = "number" idade="number"placeholder="ex:18">
+<br>
+
+data de nascimento:
+<input type = "date" name="nascimeto">
+    </br>
+E-mail:*<input 
+type = "email" name="email" placeholder="digite seu email aqui">
+    </br>
+Senha:*<input type = "password"
+name="senha"
+placeholder="digite sua senha">
+</br>
+<label>selecione um estado'</label>
+<select name=" selecione um estado">
+    <option value = "AC">AC</option>
+    <option value = "AL">AL</option>
+    <option value = "AP">AP</option>
+    <option value = "CE">CE</option>
+    <option value = "PE">PE</option>
+    <option value = "MG">MG</option>
+    <option value = "BA">BA</option>
+</select>
+
+</fieldset>
+<fieldset>
+     
+    <legend>Dados  Profissinonais:</legend>
+    
+        <label>selecione as tecnologias </label></br> 
+        <input type="checkbox" name="veiculo1" value="css">css
+        <input type="checkbox" name="veiculo2" value="html">html
+        <input type="checkbox" name="veiculo3" value="java script">java script
+        <input type="checkbox" name="veiculo4" value="type script">type script</br>
+
+        <label>selecione a ocupação </label></br> 
+        <input type="checkbox" name="veiculo1" value="Front-End">Front-End
+        <input type="checkbox" name="veiculo2" value="Back-End">Back-End
+        <input type="checkbox" name="veiculo3" value="Full-Stack">Full-Stack</br>
+        
+        <label for="story">escreva sobre você: </label></br>
+        <textarea></textarea></br></textarea>
+        <form>
+            anexe o seu curriculo <input type="file" name="arquivos">
+        </form>
+        <br><br><br>
+    </fieldset>
+    <input type = "button"
+value = 'enviar'
+onclick="msg()">
+
+<input type = "button"
+value = 'reset'
+onclick="ccl()">
+
+ </form>
+</fieldset>
+
+ <script>
+    function msg(){
+        alert ('seu formulário foi enviado')
+    }
+    
+    function ccl(){
+        alert ('seu formulário foi cancelado')
+    }
+  </script>
+
+</body>
+</html>
